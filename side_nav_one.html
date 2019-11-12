@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html{
+    width:100%;
+    height:100%;
+
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  margin: 0;
+flex-wrap: wrap;
+}
+
+.header{
+ position: fixed;
+ top:0px;
+display: flex;
+width: 100%;
+flex:1;
+min-height: 55px;
+
+background:#eeeeee;
+z-index: 50;
+/* justify-content: space-around; */
+}
+/* bottom navigation */
+.bottom_nav{
+    /* left:0px; */
+    /* right:0px; */
+z-index: 20;
+display:flex;
+width: 100%;
+flex:1;
+    position: fixed;
+    bottom: 0px;
+    height: 70px;
+}
+.bottom_nav_img{
+  margin-left:6px;
+}
+
+.bottom_nav_title{
+    /* position: absolute;
+    top:37px;
+    left:11px; */
+}
+.side_nav{
+
+position: fixed;
+left:0px;
+top:55px;
+width:20%;
+height: 100%;
+background:#2a4054;
+z-index: 10;
+/* overflow: auto; */
+}
+.main{
+position: relative;
+background:#f7f7f7;
+display:flex;
+flex:1;
+margin-left:20%;
+height:100%;
+/* width: 100%; */
+top:55px;
+}
+.isat_layout{
+    width: 100%;
+   /* display:flex;
+   flex:1;
+   flex-direction: row; */
+    padding:10px;
+}
+.logo{
+    padding: 10px 16px;
+    display: block;
+}
+/* core */
+.divider{
+    display:flex;
+    flex:1;
+}
+.isat-flex{
+    display:flex;
+    /* flex:1; */
+}
+.isat-wrap{
+    flex-wrap: wrap;
+}
+.isat-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  box-sizing: border-box;
+  
+}
+.flex-ja{
+justify-content:space-around;
+}
+
+.flex-jb{
+justify-content:space-between;
+}
+
+.flex-ia{
+align-items:space-around;
+}
+
+.flex-ib{
+align-items:space-between;
+}
+
+.fill_height{
+    height: 100%;
+  
+}
+
+/* menu */
+.isat_menu{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    list-style: none;
+    width:100%
+ }
+
+.menu_item{
+    float:left;
+    
+}
+.menu_item a{
+    padding: 1.25rem 0.5rem;
+    font-size: 1rem;
+    max-width: 140px;    
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    color: #333;
+}
+.menu_item a:hover{
+    background:black;
+    color: white;
+}
+.isat_nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height:720px;
+/* overflow: auto; */
+}
+.nav_item a{
+    display: block;
+  /* background: #dddddd; */
+  padding: 8px 16px;
+   text-decoration: none;
+   color:white;
+}
+.nav_item a:hover{
+    background: black;
+    color:white;
+}
+/* side nav material */
+.material_menu_header{
+    display:flex;
+    flex:1;
+    flex-direction:column;
+    padding:15px;
+    word-break:break-all;
+    height: 170px;
+}
+/* timeline */
+.ul-ts{
+    position: relative;
+list-style-type: none;
+border-left:1px solid black;
+margin-left:30px;
+}
+.li-ts{
+margin-bottom:40px;
+}
+
+.li-ts .ts-title{
+position: absolute;
+margin-left:-56px;
+background: black;
+color:white;
+width:35px;
+height:35px;
+line-height: 32px;
+text-align: center;
+border-radius: 50%;
+font-size: 12px;
+}
+.li-ts .ts-content{
+position: relative;
+margin-left:-5px ;
+padding-top:5px;
+color:white;
+}
+
+.li-ts-circle{
+
+position: absolute;    
+margin-left: 8px;
+margin-top:7px;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background:orangered
+}
+.ts-container{
+ height: 750px;
+    overflow: auto;
+}
+
+/* color */
+.white{
+    color:white;
+}
+
+
+.row{
+    display: flex;
+    flex:1;
+    /* margin:5px;
+    padding:5px; */
+    flex-wrap: wrap;
+
+}
+
+.row-m{
+    display:flex;
+
+}
+.col-1{
+    width:8.33%
+}
+
+.col-2{
+    width:16.666%
+}
+.col-3{
+    width:25%
+}
+
+.col-4{
+    width:33.332%
+}
+
+.col-5{
+    width:41.665%
+}
+.col-6{
+    width:50%
+}
+
+.col-7{
+width:58.331%
+}
+
+
+.col-8{
+width:66.664%;
+}
+.col-9{
+width:75%;
+}
+.col-10{
+   width:83.33%
+}
+
+.col-11{
+    width: 91.66%;
+}
+.col-12{
+    width:100%
+}
+/* card */
+/* container arrange items */
+
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50px;
+    -moz-background-clip: padding;
+    border-radius: 50px;
+    background-clip: padding-box;
+    margin: 7px 0 0 5px;
+    float: left;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+/* media query */
+@media only screen and (max-width: 480px) {
+/* For mobile phones: */
+[class*="col-"] {
+    display: flex;
+
+    width: 100%;
+
+  }
+  .row-m{
+    display:flex;
+  flex-wrap: wrap;
+}
+
+.side_nav{
+    width:0px;
+}
+.main{
+    width:100%;
+    margin-left:0px;
+}
+}
+@media only screen and (max-width: 768px) {
+    .side_nav{
+    width:35%;
+}
+
+
+}
+
+.bottom_nav_gesture{
+    position: fixed;
+    /* visibility: hidden; */
+    height: 100px;
+    width: 100%;
+    bottom: 0px;
+    z-index: 100000;
+}
+
+
+#myElement {
+  background: silver;
+  height: 300px;
+  text-align: center;
+  font: 30px/300px Helvetica, Arial, sans-serif;
+}
+</style>
+</head>
+
+<body>
+    <div class="header">    
+                    <div class="logo"><img src="isat.png" style="width:45px;height:30px" ></div>
+                    <div class="divider"></div>
+            <ul class="isat_menu">
+                <li class="menu_item"><a href="#">home</a></li>
+                <li class="menu_item"><a href="#">service</a></li>
+                <li class="menu_item"><a href="#">examples</a></li>
+                <li class="menu_item"><a href="#">home</a></li>
+            </ul>   
+            
+    </div>
+
+    <div class="side_nav">
+           
+
+            <div>
+                              <ul style="display:flex;flex-direction:column;width:100%;list-style-type: none;margin: 0px;padding: 0px;">
+                                <li class="material_menu_header" style="background-image:url(images/material.png);">
+                                <div style="display:flex;width: 100%;">
+                                <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);"></div>
+                                </div>
+                                <div class="divider"></div>
+                                <div style="color:white">isatsoftwaresolutions@gmail.com</div>
+                                <div class="divider"></div>
+                                <div style="color:white">Balaji</div>
+                                </li>
+                                <li style="display: flex;padding:10px 16px;color:white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                <li style="display: flex;padding:10px 16px;color:white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;background:red">yahoo</div></li>
+                                <li style="display: flex;padding:10px 16px;color:white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">ibms</div></li>
+                              </ul>
+                      </div>         
+                      </div>
+  
+    <div class="main">
+            
+            <div class="isat_layout">
+                    <h2>Card</h2>
+                <div class="isat-flex isat-wrap flex-ja flex-ia" >
+                <div class="isat-card" style="width:30%;margin:10px 0">card</div>
+                <div class="isat-card" style="width:30%;margin:10px 0">card</div>
+                <div class="isat-card" style="width:30%;margin:10px 0">card</div>
+                <div class="isat-card" style="width:30%;margin:10px 0">card</div>
+                <div class="isat-card" style="width:30%;margin:10px 0">card</div>
+                <div class="isat-card" style="width:30%;margin:10px 0">card</div>
+                </div>
+           
+ 
+        <!-- <div class="isat-flex isat-wrap flex-jb flex-ib ">
+                <div class="isat-card"  style="width:20%;margin:10px 0;background: red;">card</div>
+                <div class="isat-card" style="width:70%;margin:10px 0;background:yellow">card</div>
+        </div>         -->
+
+
+<div class="row">
+        <h2>Grid code:</h2>
+    <div class="isat-card col-12" style="margin-bottom: 5px;">
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;isat-card col-1&quot; &gt;col-1&lt;/div&gt;
+               &lt;div class=&quot;isat-card col-11&quot; &gt;col-11&lt;/div&gt;
+            &lt;div class=&quot;isat-card col-2&quot; &gt;col-2&lt;/div&gt;
+            &lt;div class=&quot;isat-card col-10&quot; &gt;col-10&lt;/div&gt;
+        
+            &lt;div class=&quot;isat-card col-3&quot; &gt;col-3&lt;/div&gt;    
+            &lt;div class=&quot;isat-card col-9&quot; &gt;col-9&lt;/div&gt;
+    
+            &lt;div class=&quot;isat-card col-1&quot; &gt;col-4&lt;/div&gt;    
+            &lt;div class=&quot;isat-card col-11&quot; &gt;col-8&lt;/div&gt;
+            &lt;div class=&quot;isat-card col-5&quot; &gt;col-5&lt;/div&gt;    
+            &lt;div class=&quot;isat-card col-7&quot; &gt;col-7&lt;/div&gt;
+            &lt;div class=&quot;isat-card col-6&quot; &gt;col-6&lt;/div&gt;    
+            &lt;div class=&quot;isat-card col-6&quot; &gt;col-6&lt;/div&gt;
+            
+     &lt;/div&gt;</div>
+
+</div>
+
+<h2>Grid</h2>
+<div class="row" style="padding:5px">
+    
+        <div class="isat-card col-1" >col-1</div>
+    
+        <div class="isat-card col-11" >col-11</div>
+        <div class="isat-card col-2" >col-2</div>
+        <div class="isat-card col-10" >col-10</div>
+    
+        <div class="isat-card col-3" >col-3</div>    
+        <div class="isat-card col-9" >col-9</div>
+
+        <div class="isat-card col-1" >col-4</div>    
+        <div class="isat-card col-11" >col-8</div>
+        <div class="isat-card col-5" >col-5</div>    
+        <div class="isat-card col-7" >col-7</div>
+        <div class="isat-card col-6" >col-6</div>    
+        <div class="isat-card col-6" >col-6</div>
+        
+ </div>
+ <h2>Grid Spacing code</h2>
+ <div class="row">
+     <div class="isat-card col-12"> &lt;div class=&quot;row-m&quot;&gt;
+            &lt;div class=&quot;isat-card col-6&quot; style=&quot;margin:5px;background: red;&quot; &gt;col-1&lt;/div&gt;
+        
+            &lt;div class=&quot;isat-card col-6&quot;  style=&quot;margin:5px;background: coral;&quot; &gt;col-11&lt;/div&gt;
+    
+            
+        &lt;/div&gt;</div>
+ </div>
+
+ <h2>Grid Spacing </h2>
+<div class="row-m">
+<div class="isat-card col-1" style="margin:5px;background: red;" >col-1</div>
+
+<div class="isat-card col-11"  style="margin:5px;background: coral;" >col-11</div>
+</div>
+
+<div class="row-m">
+<div class="isat-card col-2" style="margin:5px;background: red;" >col-2</div>
+<div class="isat-card col-10"  style="margin:5px;background: coral;" >col-10</div>
+</div>
+
+<div class="row-m">
+<div class="isat-card col-3" style="margin:5px;background: red;" >col-3</div>
+
+<div class="isat-card col-9"  style="margin:5px;background: coral;" >col-9</div>
+</div>
+
+<div class="row-m">
+<div class="isat-card col-4" style="margin:5px;background: red;" >col-4</div>
+<div class="isat-card col-8"  style="margin:5px;background: coral;" >col-8</div>
+</div>
+<div class="row-m">
+<div class="isat-card col-5" style="margin:5px;background: red;" >col-5</div>
+<div class="isat-card col-7"  style="margin:5px;background: coral;" >col-7</div>
+
+</div>
+<div class="row-m">
+<div class="isat-card col-6" style="margin:5px;background: red;" >col-6</div>
+<div class="isat-card col-6"  style="margin:5px;background: coral;" >col-6</div>
+</div>   
+  
+
+<h2>Headers</h2>
+
+<h3>flex-start</h3>      
+       
+<ul class="isat-card isat_menu header" style="position: relative;z-index: 1;">
+    <li class="menu_item"><a href="#">home</a></li>
+    <li class="menu_item"><a href="#">service</a></li>
+    <li class="menu_item"><a href="#">examples</a></li>
+    <li class="menu_item"><a href="#">home</a></li>
+</ul>   
+<h3>center</h3>
+<ul class="isat-card isat_menu header center" style="position: relative;z-index: 1;">
+        <li class="menu_item"><a href="#">home</a></li>
+        <li class="menu_item"><a href="#">service</a></li>
+        <li class="menu_item"><a href="#">examples</a></li>
+        <li class="menu_item"><a href="#">home</a></li>
+    </ul>   
+<h3>flex end</h3>
+    <ul class="isat-card isat_menu header flex-end" style="position: relative;z-index: 1;">
+            <li class="menu_item"><a href="#">home</a></li>
+            <li class="menu_item"><a href="#">service</a></li>
+            <li class="menu_item"><a href="#">examples</a></li>
+            <li class="menu_item"><a href="#">home</a></li>
+        </ul> 
+  <h3>space around</h3>      
+        <ul class="isat-card isat_menu header space-around" style="position: relative;z-index: 1;">
+                <li class="menu_item"><a href="#">home</a></li>
+                <li class="menu_item"><a href="#">service</a></li>
+                <li class="menu_item"><a href="#">examples</a></li>
+                <li class="menu_item"><a href="#">home</a></li>
+            </ul>   
+
+  <h3>space between</h3>
+            <ul class="isat-card isat_menu header space-between" style="position: relative;z-index: 1;">
+                    <li class="menu_item"><a href="#">home</a></li>
+                    <li class="menu_item"><a href="#">service</a></li>
+                    <li class="menu_item"><a href="#">examples</a></li>
+                    <li class="menu_item"><a href="#">home</a></li>
+                </ul>   
+    
+                <div id="myElement"></div>
+
+       <!-- bottom nav article-->
+       <!-- <div class="bottom_nav" style="position: relative;">
+            <ul class="isat-card isat_menu  space-between" style="width:100%" >
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                      
+                </ul>   
+               
+
+       </div>  -->
+       
+       
+   <!-- end main wrap     -->
+       
+            </div>
+    </div>
+    <!-- end main wrap -->
+
+
+
+       <!-- bottom_nav -->
+
+       <div class="bottom_nav">
+            <ul class="isat-card isat_menu  space-between" style="width:100%" >
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                      
+                </ul>   
+               
+
+       </div> 
+      
+       <div class="bottom_nav_gesture"></div>
+
+    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script>
+
+var main = document.querySelector('.main');
+var side_nav=document.querySelector('.side_nav');
+// height computation of header and footer
+//class .header .bottom_nav
+
+var bottom_nav=document.querySelector('.bottom_nav');
+
+var bottom_gesture=document.querySelector('.bottom_nav_gesture');
+
+
+
+
+
+
+var mc = new Hammer(main);
+var g_bottom=new Hammer(bottom_gesture);
+
+g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+  /* The viewport is less than, or equal to, 700 pixels wide */
+
+  mc.on("swiperight", function(ev) {
+
+
+side_nav.style.width="70%";
+
+
+  
+});
+
+mc.on("swipeleft", function(ev) {
+  
+side_nav.style.width="0%";
+});
+
+
+
+g_bottom.on("swipeup", function(ev) {
+    bottom_nav.style.display="block"; 
+  });
+
+  g_bottom.on("swipedown", function(ev) {
+  
+ 
+  });
+
+
+}
+
+
+
+
+   
+  
+
+
+
+// var main=document.querySelectorAll('.main');
+// create a simple instance
+// by default, it only adds horizontal recognizers
+
+// listen to events...
+
+</script>
+</body>
+</html>
