@@ -264,6 +264,35 @@ background:orangered
     color:white;
 }
 
+
+/* new grid */
+
+.grid-box {
+   
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    /* padding: 1em; */
+    /* margin: 1em auto; */
+}
+.grid-box:after {
+    content: "";
+    flex: auto;
+}
+.grid-box .item-2 {
+    /* height: 10em; */
+    width: 25%;
+    padding: 0.5em;
+    box-sizing: border-box;
+}
+.grid-box .item-2 img {
+    width: 100%;
+}
+
+
+
 .grid{
     display: flex;
     flex:1;
