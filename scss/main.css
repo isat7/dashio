@@ -264,11 +264,23 @@ background:orangered
     color:white;
 }
 
-/* .grid{
+.grid{
     display: flex;
     flex:1;
     flex-wrap: wrap;
 
+}
+
+.grid_item{
+    flex:1 1 auto;
+    margin: 5px;
+}
+/* .grid_item:last-child{
+    margin:0px;
+} */
+ /* .grid_item:not(:last-child){
+    flex:1 1 auto;
+    margin: 5px;
 } */
 
 .row{
