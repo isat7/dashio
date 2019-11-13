@@ -8,350 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html{
-    width:100%;
-    height:100%;
 
-}
+<link rel="stylesheet" href="scss//main.css">
 
-body {
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  margin: 0;
-flex-wrap: wrap;
-}
-
-.header{
- position: fixed;
- top:0px;
-display: flex;
-width: 100%;
-flex:1;
-min-height: 55px;
-
-background:#eeeeee;
-z-index: 50;
-/* justify-content: space-around; */
-}
-/* bottom navigation */
-.bottom_nav{
-    /* left:0px; */
-    /* right:0px; */
-z-index: 20;
-display:flex;
-width: 100%;
-flex:1;
-    position: fixed;
-    bottom: 0px;
-    height: 70px;
-}
-.bottom_nav_img{
-  margin-left:6px;
-}
-
-.bottom_nav_title{
-    /* position: absolute;
-    top:37px;
-    left:11px; */
-}
-.side_nav{
-
-position: fixed;
-left:0px;
-top:55px;
-width:20%;
-height: 100%;
-background:#2a4054;
-z-index: 10;
-/* overflow: auto; */
-}
-.main{
-position: relative;
-background:#f7f7f7;
-display:flex;
-flex:1;
-margin-left:20%;
-height:100%;
-/* width: 100%; */
-top:55px;
-}
-.isat_layout{
-    width: 100%;
-   /* display:flex;
-   flex:1;
-   flex-direction: row; */
-    padding:10px;
-}
-.logo{
-    padding: 10px 16px;
-    display: block;
-}
-/* core */
-.divider{
-    display:flex;
-    flex:1;
-}
-.isat-flex{
-    display:flex;
-    /* flex:1; */
-}
-.isat-wrap{
-    flex-wrap: wrap;
-}
-.isat-card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-  box-sizing: border-box;
-  
-}
-.flex-ja{
-justify-content:space-around;
-}
-
-.flex-jb{
-justify-content:space-between;
-}
-
-.flex-ia{
-align-items:space-around;
-}
-
-.flex-ib{
-align-items:space-between;
-}
-
-.fill_height{
-    height: 100%;
-  
-}
-
-/* menu */
-.isat_menu{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    list-style: none;
-    width:100%
- }
-
-.menu_item{
-    float:left;
-    
-}
-.menu_item a{
-    padding: 1.25rem 0.5rem;
-    font-size: 1rem;
-    max-width: 140px;    
-    text-decoration: none;
-    display: flex;
-    align-items: flex-start;
-    color: #333;
-}
-.menu_item a:hover{
-    background:black;
-    color: white;
-}
-.isat_nav{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height:720px;
-/* overflow: auto; */
-}
-.nav_item a{
-    display: block;
-  /* background: #dddddd; */
-  padding: 8px 16px;
-   text-decoration: none;
-   color:white;
-}
-.nav_item a:hover{
-    background: black;
-    color:white;
-}
-
-/* timeline */
-.ul-ts{
-    position: relative;
-list-style-type: none;
-border-left:1px solid black;
-margin-left:30px;
-}
-.li-ts{
-margin-bottom:40px;
-}
-
-.li-ts .ts-title{
-position: absolute;
-margin-left:-56px;
-background: black;
-color:white;
-width:35px;
-height:35px;
-line-height: 32px;
-text-align: center;
-border-radius: 50%;
-font-size: 12px;
-}
-.li-ts .ts-content{
-position: relative;
-margin-left:-5px ;
-padding-top:5px;
-color:white;
-}
-
-.li-ts-circle{
-
-position: absolute;    
-margin-left: 8px;
-margin-top:7px;
-width: 20px;
-height: 20px;
-border-radius: 50%;
-background:orangered
-}
-.ts-container{
- height: 750px;
-    overflow: auto;
-}
-
-/* color */
-.white{
-    color:white;
-    text-decoration: none;
-}
-
-
-.row{
-    display: flex;
-    flex:1;
-    /* margin:5px;
-    padding:5px; */
-    flex-wrap: wrap;
-
-}
-
-.row-m{
-    display:flex;
-
-}
-.col-1{
-    width:8.33%
-}
-
-.col-2{
-    width:16.666%
-}
-.col-3{
-    width:25%
-}
-
-.col-4{
-    width:33.332%
-}
-
-.col-5{
-    width:41.665%
-}
-.col-6{
-    width:50%
-}
-
-.col-7{
-width:58.331%
-}
-
-
-.col-8{
-width:66.664%;
-}
-.col-9{
-width:75%;
-}
-.col-10{
-   width:83.33%
-}
-
-.col-11{
-    width: 91.66%;
-}
-.col-12{
-    width:100%
-}
-/* card */
-/* container arrange items */
-
-.flex-start{
-    justify-content: flex-start;
-}
-.flex-end{
-    justify-content: flex-end;
-}
-
-.center{
-    justify-content: center;
-}
-.space-around{
-    justify-content: space-around;
-}
-
-.space-between{
-    justify-content: space-between;
-}
-
-/* media query */
-@media only screen and (max-width: 480px) {
-/* For mobile phones: */
-[class*="col-"] {
-    display: flex;
-
-    width: 100%;
-
-  }
-  .row-m{
-    display:flex;
-  flex-wrap: wrap;
-}
-
-.side_nav{
-    width:0px;
-}
-.main{
-    width:100%;
-    margin-left:0px;
-}
-}
-@media only screen and (max-width: 768px) {
-    .side_nav{
-    width:35%;
-}
-
-
-}
-
-.bottom_nav_gesture{
-    position: fixed;
-    /* visibility: hidden; */
-    height: 100px;
-    width: 100%;
-    bottom: 0px;
-    z-index: 100000;
-}
-
-
-#myElement {
-  background: silver;
-  height: 300px;
-  text-align: center;
-  font: 30px/300px Helvetica, Arial, sans-serif;
-}
-</style>
 </head>
 
 <body>
@@ -584,7 +243,40 @@ width:75%;
                     <li class="menu_item"><a href="#">examples</a></li>
                     <li class="menu_item"><a href="#">home</a></li>
                 </ul>   
-    
+                  
+                
+                <div class="row">
+                    <div class="isat-card col-12 primary">primary</div>
+                    <div class="isat-card col-12 success">success</div>
+                    <div class="isat-card col-12 warning">warning</div>
+                    <div class="isat-card col-12 info">info</div>
+                    <div class="isat-card col-12 danger">danger</div>
+                    <div class="isat-card col-12 dark">dark</div>
+                </div>
+                
+                <br>
+                <!-- button -->
+                <h2>Small material Buttons</h2>
+                <button class="material_btn btn_s primary">primary </button>
+                <button class="material_btn btn_s info">info</button>
+                <button class="material_btn btn_s warning">warning</button>
+                <button class="material_btn btn_s danger">danger</button>
+               <h2>Large material Buttons</h2>
+                
+                <br>
+                <button class="material_btn btn_l primary">submit hello world </button>
+                <button class="material_btn btn_l info">submit hello world </button>
+                <button class="material_btn btn_l warning">submit hello world </button>
+                <button class="material_btn btn_l danger">submit hello world </button>
+
+                    
+                <br>
+                <button class="outline_btn btn_l o_primary">submit hello world </button>
+                <button class="outline_btn btn_l o_info">submit hello world </button>
+                <button class="outline_btn btn_l o_warning">submit hello world </button>
+                <button class="outline_btn btn_l o_danger">submit hello world </button>
+
+
                 <div id="myElement"></div>
 
        <!-- bottom nav article-->
@@ -622,77 +314,82 @@ width:75%;
                
 
        </div> 
-      
+    
+
+
        <div class="bottom_nav_gesture"></div>
        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
        <script>
-       
-       var main = document.querySelector('.main');
-       var side_nav=document.querySelector('.side_nav');
-       // height computation of header and footer
-       //class .header .bottom_nav
-       
-       var bottom_nav=document.querySelector('.bottom_nav');
-       
-       var bottom_gesture=document.querySelector('.bottom_nav_gesture');
-       
-       
-       
-       
-       
-       
-       var mc = new Hammer(main);
-       var g_bottom=new Hammer(bottom_gesture);
-       
-       g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-       
-       if (window.matchMedia("(max-width: 480px)").matches) {
-         /* The viewport is less than, or equal to, 700 pixels wide */
-       
-         mc.on("swiperight", function(ev) {
-       
-       side_nav.style.display="block";
-       side_nav.style.width="70%";
-       
-       
-         
-       });
-       
-       mc.on("swipeleft", function(ev) {
-         
-       side_nav.style.width="0px";
-       side_nav.style.top="0px";
-       
-       });
-       
-       
-       
-       g_bottom.on("swipeup", function(ev) {
-           bottom_nav.style.display="block"; 
-         });
-       
-         g_bottom.on("swipedown", function(ev) {
-         
+
+        var main = document.querySelector('.main');
+        var side_nav=document.querySelector('.side_nav');
+        // height computation of header and footer
+        //class .header .bottom_nav
         
-         });
-       
-       
-       }
-       
-       
-       
-       
+        var bottom_nav=document.querySelector('.bottom_nav');
+        
+        var bottom_gesture=document.querySelector('.bottom_nav_gesture');
+        
+        
+        
+        
+        
+        
+        var mc = new Hammer(main);
+        var g_bottom=new Hammer(bottom_gesture);
+        
+        g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+        
+        if (window.matchMedia("(max-width: 480px)").matches) {
+          /* The viewport is less than, or equal to, 700 pixels wide */
+          side_nav.classList.add("hide");
+          mc.on("swiperight", function(ev) {
+        
+        side_nav.classList.remove("hide");
+        
+        side_nav.style.top="0px";
+        
+        
+          
+        });
+        
+        mc.on("swipeleft", function(ev) {
+        
+            side_nav.classList.add("hide");
+        
+        });
+        
+        
+        
+        g_bottom.on("swipeup", function(ev) {
+            bottom_nav.style.display="block"; 
+          });
+        
+          g_bottom.on("swipedown", function(ev) {
           
          
-       
-       
-       
-       // var main=document.querySelectorAll('.main');
-       // create a simple instance
-       // by default, it only adds horizontal recognizers
-       
-       // listen to events...
-       
-       </script>
+          });
+        
+        
+        }
+        
+        
+        
+        
+        
+        // }
+        
+           
+          
+        
+        
+        
+        // var main=document.querySelectorAll('.main');
+        // create a simple instance
+        // by default, it only adds horizontal recognizers
+        
+        // listen to events...
+        
+        </script>
        </body>
 </html>
