@@ -176,6 +176,15 @@ align-items:space-between;
     color:white;
 }
 /* side nav material */
+.material_menu_container{
+
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
 .material_menu_header{
     display:flex;
     flex:1;
@@ -183,6 +192,15 @@ align-items:space-between;
     padding:15px;
     word-break:break-all;
     height: 170px;
+}
+.material_list{
+    display: flex;padding:10px 16px;color:white";
+}
+.active{
+    background:#7c7777;
+}
+.material_list:hover{
+    background: #8a8484;
 }
 /* timeline */
 .ul-ts{
@@ -343,21 +361,30 @@ width:75%;
 }
 
 .side_nav{
-    width:0px;
+
+    position: fixed;
+    z-index: 100;
+    top:0px;
+    width:70%;
 }
 .main{
     width:100%;
     margin-left:0px;
 }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 481px) {
     .side_nav{
-    width:35%;
-}
+    width:60%;
+} 
 
 
-}
+ } 
 
+ @media only screen and (min-width: 781px) {
+    .side_nav{
+    width:20%;
+} 
+ }
 .bottom_nav_gesture{
     position: fixed;
     /* visibility: hidden; */
@@ -373,6 +400,10 @@ width:75%;
   height: 300px;
   text-align: center;
   font: 30px/300px Helvetica, Arial, sans-serif;
+}
+
+.hide{
+    display:none
 }
 </style>
 </head>
@@ -393,8 +424,7 @@ width:75%;
     <div class="side_nav">
            
 
-            <div>
-                              <ul style="display:flex;flex-direction:column;width:100%;list-style-type: none;margin: 0px;padding: 0px;">
+            <div>                <ul class="material_menu_container">
                                 <li class="material_menu_header" style="background-image:url(images/material.png);">
                                 <div style="display:flex;width: 100%;">
                                 <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);"></div>
@@ -404,10 +434,17 @@ width:75%;
                                 <div class="divider"></div>
                                 <div style="color:white">Balaji</div>
                                 </li>
-                                <li style="display: flex;padding:10px 16px;color:white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
-                                <li style="display: flex;padding:10px 16px;color:white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;background:red">yahoo</div></li>
-                                <li style="display: flex;padding:10px 16px;color:white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">ibms</div></li>
-                              </ul>
+                                <li class="material_list active white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                              
+                                <li><hr></li>
+                                <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+                                
+                            </ul>
                       </div>         
                       </div>
   
@@ -622,19 +659,21 @@ g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
 
 if (window.matchMedia("(max-width: 480px)").matches) {
   /* The viewport is less than, or equal to, 700 pixels wide */
-
+  side_nav.classList.add("hide");
   mc.on("swiperight", function(ev) {
 
+side_nav.classList.remove("hide");
 
-side_nav.style.width="70%";
+side_nav.style.top="0px";
 
 
   
 });
 
 mc.on("swipeleft", function(ev) {
-  
-side_nav.style.width="0%";
+
+    side_nav.classList.add("hide");
+
 });
 
 
@@ -653,6 +692,9 @@ g_bottom.on("swipeup", function(ev) {
 
 
 
+
+
+// }
 
    
   

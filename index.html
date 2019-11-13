@@ -624,74 +624,75 @@ width:75%;
        </div> 
       
        <div class="bottom_nav_gesture"></div>
-
-    <script src="https://hammerjs.github.io/dist/hammer.js"></script>
-<script>
-
-var main = document.querySelector('.main');
-var side_nav=document.querySelector('.side_nav');
-// height computation of header and footer
-//class .header .bottom_nav
-
-var bottom_nav=document.querySelector('.bottom_nav');
-
-var bottom_gesture=document.querySelector('.bottom_nav_gesture');
-
-
-
-
-
-
-var mc = new Hammer(main);
-var g_bottom=new Hammer(bottom_gesture);
-
-g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
-
-if (window.matchMedia("(max-width: 480px)").matches) {
-  /* The viewport is less than, or equal to, 700 pixels wide */
-
-  mc.on("swiperight", function(ev) {
-
-
-side_nav.style.width="60%";
-
-
-  
-});
-
-mc.on("swipeleft", function(ev) {
-  
-side_nav.style.width="0%";
-});
-
-
-
-g_bottom.on("swipeup", function(ev) {
-    bottom_nav.style.display="block"; 
-  });
-
-  g_bottom.on("swipedown", function(ev) {
-  
- 
-  });
-
-
-}
-
-
-
-
-   
-  
-
-
-
-// var main=document.querySelectorAll('.main');
-// create a simple instance
-// by default, it only adds horizontal recognizers
-
-// listen to events...
-
-</script>
-</body>
+       <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+       <script>
+       
+       var main = document.querySelector('.main');
+       var side_nav=document.querySelector('.side_nav');
+       // height computation of header and footer
+       //class .header .bottom_nav
+       
+       var bottom_nav=document.querySelector('.bottom_nav');
+       
+       var bottom_gesture=document.querySelector('.bottom_nav_gesture');
+       
+       
+       
+       
+       
+       
+       var mc = new Hammer(main);
+       var g_bottom=new Hammer(bottom_gesture);
+       
+       g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+       
+       if (window.matchMedia("(max-width: 480px)").matches) {
+         /* The viewport is less than, or equal to, 700 pixels wide */
+       
+         mc.on("swiperight", function(ev) {
+       
+       side_nav.style.display="block";
+       side_nav.style.width="70%";
+       
+       
+         
+       });
+       
+       mc.on("swipeleft", function(ev) {
+         
+       side_nav.style.width="0px";
+       side_nav.style.top="0px";
+       
+       });
+       
+       
+       
+       g_bottom.on("swipeup", function(ev) {
+           bottom_nav.style.display="block"; 
+         });
+       
+         g_bottom.on("swipedown", function(ev) {
+         
+        
+         });
+       
+       
+       }
+       
+       
+       
+       
+          
+         
+       
+       
+       
+       // var main=document.querySelectorAll('.main');
+       // create a simple instance
+       // by default, it only adds horizontal recognizers
+       
+       // listen to events...
+       
+       </script>
+       </body>
 </html>
