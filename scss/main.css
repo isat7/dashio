@@ -607,3 +607,25 @@ border-bottom:1px solid black ;
     /* color:red;
     background:red; */
   } 
+
+
+  .list-content {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .list-content:after {
+    position: absolute;
+    content: '';
+    border-bottom: 1px solid #d2d7da;
+    width: 100%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    left: 50%;
+  }
+
+  .list-content:last-child {
+    /* border: none !important; */
+    /* /* color:red; */
+    /* background:red;  */
+  } 
