@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="scss//main.css">
+
+</head>
+
+<body>
+    <div class="header">    
+                    <div class="logo"><img src="isat.png" style="width:45px;height:30px" ></div>
+                    <div class="divider"></div>
+            <ul class="isat_menu">
+                <li class="menu_item"><a href="#">home</a></li>
+                <li class="menu_item"><a href="#">service</a></li>
+                <li class="menu_item"><a href="#">examples</a></li>
+                <li class="menu_item"><a href="#">home</a></li>
+            </ul>   
+            
+    </div>
+
+    <div class="side_nav">
+           
+
+        <div>                <ul class="material_menu_container">
+            <li class="material_menu_header" style="background-image:url(images/material.png);">
+            <div style="display:flex;width: 100%;">
+            <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);"></div>
+            </div>
+            <div class="divider"></div>
+            <div style="color:white">isatsoftwaresolutions@gmail.com</div>
+            <div class="divider"></div>
+            <div style="color:white">Balaji</div>
+            </li>
+            <li class="material_list active white"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+            <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+            <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+            <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+          
+            <li><hr></li>
+            <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+            <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+            <li class="material_list"><div style="display:flex;flex:1;"><i class="fa fa-address-book" style="font-size:24px"></i></div><div style="display:flex;flex:4;">google</div></li>
+            
+        </ul>
+  </div>    
+                      </div>
+  
+    <div class="main">
+            
+            <div class="isat_layout">
+              
+ 
+                
+
+<div class="row">
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+    <img style="margin:10px;" class="grid-3"  src="images/balaji.jpg" alt="loading..." > 
+   
+    
+  </div>
+         </div>
+
+         <!-- <div id="myElement"></div> -->
+   <!-- end main wrap     -->
+       
+            </div>
+    </div>
+    <!-- end main wrap -->
+
+
+
+       <!-- bottom_nav -->
+
+       <div class="bottom_nav">
+            <ul class="isat-card isat_menu  space-between" style="width:100%" >
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                     <li class="menu_item"><a href="#" style="display: flex;flex-direction: column;"><div class="bottom_nav_img"><i class="fa fa-address-book" style="font-size:24px"></i></div><div class="bottom_nav_title">home</div></a></li>
+                      
+                </ul>   
+               
+
+       </div> 
+    
+
+
+       <div class="bottom_nav_gesture"></div>
+       <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+       <script>
+
+        var main = document.querySelector('.main');
+        var side_nav=document.querySelector('.side_nav');
+        // height computation of header and footer
+        //class .header .bottom_nav
+        
+        var bottom_nav=document.querySelector('.bottom_nav');
+        
+        var bottom_gesture=document.querySelector('.bottom_nav_gesture');
+        
+        
+        
+        
+        
+        
+        var mc = new Hammer(main);
+        var g_bottom=new Hammer(bottom_gesture);
+        
+        g_bottom.get('swipe').set({ direction: Hammer.DIRECTION_ALL });
+        
+        if (window.matchMedia("(max-width: 480px)").matches) {
+          /* The viewport is less than, or equal to, 700 pixels wide */
+          side_nav.classList.add("hide");
+          mc.on("swiperight", function(ev) {
+        
+        side_nav.classList.remove("hide");
+        
+        side_nav.style.top="0px";
+        
+        
+          
+        });
+        
+        mc.on("swipeleft", function(ev) {
+        
+            side_nav.classList.add("hide");
+        
+        });
+        
+        
+        
+        g_bottom.on("swipeup", function(ev) {
+            bottom_nav.style.display="block"; 
+          });
+        
+          g_bottom.on("swipedown", function(ev) {
+          
+         
+          });
+        
+        
+        }
+        
+        
+        
+        
+        
+        // }
+        
+           
+          
+        
+        
+        
+        // var main=document.querySelectorAll('.main');
+        // create a simple instance
+        // by default, it only adds horizontal recognizers
+        
+        // listen to events...
+        
+        </script>
+       </body>
+</html>

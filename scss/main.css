@@ -264,6 +264,12 @@ background:orangered
     color:white;
 }
 
+/* .grid{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+
+} */
 
 .row{
     display: flex;
@@ -277,6 +283,28 @@ background:orangered
 .row-m{
     display:flex;
 
+}
+/* grid */
+
+
+
+.grid-2{
+    display: flex;
+    width:16.666%
+}
+.grid-3{
+    display: flex;
+    width:25%
+}
+
+.grid-4{
+    display: flex;
+    width:33.332%
+}
+
+.grid-5{
+    display: flex;
+    width:41.665%
 }
 .col-1{
     display: flex;    
