@@ -68,7 +68,9 @@ height:100%;
 top:55px;
 }
 .isat_layout{
+    position: relative;
     width: 100%;
+    height: auto;
    /* display:flex;
    flex:1;
    flex-direction: row; */
@@ -85,7 +87,27 @@ top:55px;
 }
 .isat-flex{
     display:flex;
-    /* flex:1; */
+    flex:1;
+}
+.isat-flex-2{
+    display:flex;
+    flex:2;
+}
+.isat-flex-3{
+    display:flex;
+    flex:3;
+}
+.isat-flex-4{
+    display:flex;
+    flex:4;
+}
+.isat-flex-5{
+    display:flex;
+    flex:5;
+}
+.isat-flex-6{
+    display:flex;
+    flex:6;
 }
 .isat-wrap{
     flex-wrap: wrap;
@@ -257,46 +279,58 @@ background:orangered
 
 }
 .col-1{
-    width:8.33%
+    display: flex;    
+width:8.33%
 }
 
 .col-2{
+    display: flex;
     width:16.666%
 }
 .col-3{
+    display: flex;
     width:25%
 }
 
 .col-4{
+    display: flex;
     width:33.332%
 }
 
 .col-5{
+    display: flex;
     width:41.665%
 }
 .col-6{
+    display: flex;
     width:50%
 }
 
 .col-7{
+    display: flex;
 width:58.331%
 }
 
 
 .col-8{
+    display: flex;
 width:66.664%;
 }
 .col-9{
+    display: flex;
 width:75%;
 }
 .col-10{
+    display: flex;
    width:83.33%
 }
 
 .col-11{
+    display: flex;
     width: 91.66%;
 }
 .col-12{
+ display: flex;
     width:100%
 }
 /* card */
@@ -311,6 +345,11 @@ width:75%;
 
 .center{
     justify-content: center;
+}
+.xy_center{
+    justify-content: center;
+    align-items: center;
+
 }
 .space-around{
     justify-content: space-around;
@@ -552,4 +591,19 @@ color: #ecf0f1;
     color:#ffff;
 }
 
+/* list  */
+/* border */
 
+[class*="col-"] .isat-list{
+border-bottom:1px solid black ;
+}
+
+/* .isat-list:first-child {
+    border-top: none;
+  }
+  */
+  [class*="col-"] .isat-list:last-child {
+    /* border: none !important; */
+    /* color:red;
+    background:red; */
+  } 
