@@ -770,5 +770,12 @@ border-bottom:1px solid black ;
   }
    
   
+.grid_aspect_ratio{
+
+    max-width: 230px;
+    max-height: 120px;
+    
+    height: auto;
+}
   
   
