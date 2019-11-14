@@ -706,3 +706,51 @@ border-bottom:1px solid black ;
     /* /* color:red; */
     /* background:red;  */
   } 
+
+
+  /* masonary */
+
+  /* *{
+    box-sizing: border-box;
+  }
+
+   */
+  
+  div.masonry { 
+    display: flex; 
+    flex-direction: column; 
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    /* height: 100vw; */
+    /* max-height: 800px; */
+    font-size: 0;  
+    min-width: 0;
+    min-height: 0;
+  
+  }
+  div.mansory{
+      flex-direction: row;
+    flex-wrap: wrap;
+  }
+  div.masonry img {  
+    width: 33.3%;
+    transition: .8s opacity;
+  } 
+  
+  div.masonry:hover img { opacity: 0.3; }
+  div.masonry:hover img:hover { opacity: 1; } 
+  
+  /* fallback for earlier versions of Firefox */
+  
+  @supports not (flex-wrap: wrap) {
+    div.masonry { display: block; }
+    div.masonry img {  
+    display: inline-block;
+    vertical-align: top;
+    }
+  }
+  
+   
+  
+  
+  
