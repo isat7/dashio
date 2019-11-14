@@ -755,6 +755,10 @@ border-bottom:1px solid black ;
       width:100%;
       height: auto;
   }
+
+  .align_self{
+      align-self:center;
+  }
    
   
   
