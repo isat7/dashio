@@ -757,7 +757,8 @@ border-bottom:1px solid black ;
   }
 
   .align_self{
-      align-self:center;
+    width:100%;
+      align-items:center;
   }
    
   
