@@ -758,7 +758,8 @@ border-bottom:1px solid black ;
 
   .align_self{
     width:100%;
-      align-items:center;
+    max-height: 95px;
+      /* align-items:center; */
   }
    
   
