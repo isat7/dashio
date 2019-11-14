@@ -477,6 +477,14 @@ width:75%;
     width:100%;
     margin-left:0px;
 }
+
+.aspect_ratio{
+    max-width: 230px;
+    max-height: 120px;
+    width:100%;
+    height: auto;
+}
+
 }
 @media only screen and (min-width: 481px) {
     .side_nav{
@@ -750,10 +758,9 @@ border-bottom:1px solid black ;
     }
   }
   .aspect_ratio{
-      max-width: 230px;
-      max-height: 120px;
+     
       width:100%;
-      height: auto;
+     
   }
 
   .align_self{
