@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 
 <link rel="stylesheet" href="scss//main.css">
 
 </head>
 
-<body>
+<body style="display:block;width:100%;">
     <div class="header shadow" style="background: #fb7220;">    
                     <div class="logo"><img src="isat.png" style="width:45px;height:30px" ></div>
                     <div class="divider"></div>
@@ -88,7 +89,47 @@
           <span class="dot"></span> 
           <span class="dot"></span> 
         </div>
+
+        <div class="glider-contain">
+          <div class="glider">
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i1.jpg" /></div>
+            <div  style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i3.jpg" /></div>
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i4.jpg" /></div>
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i5.jpg" /></div>
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i6.jpg" /></div>
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i7.jpg" /></div>
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i8.jpg" /></div>
+            <div style="display:flex;margin:2px"><img style="width:100%" class="aspect_ratio" src="images/food/i9.jpg" /></div>
+          </div> 
         
+         <!-- <button role="button" aria-label="Previous" class="glider-prev">«</button>
+          <button role="button" aria-label="Next" class="glider-next">»</button>
+          <div role="tablist" class="dots"></div> -->
+        </div>
+
+<!-- <div class="" style="width: 100%;overflow:hidden;height: 200px;">
+    <div  style="height: 200px;display: inline-block;width:20%;background: green;">f</div>
+    <div  style="height: 200px;display: inline-block;width:20%;background: red;">f</div>
+    <div  style="height: 200px;display: inline-block;width:20%;background: orange;">g</div>
+    <div  style="height: 200px;display: inline-block;width:20%;background: blue;">f</div>
+    <div  style="height: 200px;display: inline-block;width:20%;background: yellow;">f</div>
+    <div  style="height: 200px;display: inline-block;width:20%;background: green;">d</div>
+
+</div>     -->
+
+<!-- <div class="card">
+        <div class="card_content">g</div>
+        <div class="card_content">g</div>
+        <div class="card_content">d</div>
+        <div class="card_content">a</div>
+        <div class="card_content">d</div>
+        <div class="card_content"></div>
+        <div class="card_content"></div>
+        <div class="card_content"></div>
+        <div class="card_content"></div>
+        <div class="card_content"></div>
+</div> -->
+
 
 
 
@@ -247,6 +288,7 @@
        <div class="bottom_nav_gesture"></div>
        <!-- <script type="text/javascript" src="js/main.js"></script> -->
        <script src="https://hammerjs.github.io/dist/hammer.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
        <script>
 
         var main = document.querySelector('.main');
@@ -257,7 +299,9 @@
         var bottom_nav=document.querySelector('.bottom_nav');
         
         var bottom_gesture=document.querySelector('.bottom_nav_gesture');
-        
+        //card slides
+        var cards=document.querySelectorAll(".card_content");
+        console.log(cards.length);
         // Global variable
 
 var slideIndex = 0;
@@ -326,22 +370,16 @@ function showSlides() {
         }
         
         
+     //horizontal slide
+     new Glider(document.querySelector('.glider'), {
+  slidesToShow: 4,
+  dots: '#dots',
+  draggable: true,
+ 
+});   
         
         
-        
-        // }
-        
-           
-          
-        
-        
-        
-        // var main=document.querySelectorAll('.main');
-        // create a simple instance
-        // by default, it only adds horizontal recognizers
-        
-        // listen to events...
-        
+     
         </script>
        </body>
 </html>

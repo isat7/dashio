@@ -781,7 +781,7 @@ border-bottom:1px solid black ;
 .mySlides {display: none;}
 .vertical-align {vertical-align: middle;}
 
-/* Slideshow container */
+/* Slideshow container-------------------------------------------------------------------------------------- */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -846,3 +846,36 @@ border-bottom:1px solid black ;
   .text {font-size: 11px}
 }
   
+/* card slider --------------------------------------------------------------------------------------------*/
+.card {
+    display: flex;
+    background-color: #fff;
+    /* width: 100%; */
+    max-width: 1000px;
+    /* min-height: 200px; */
+    overflow-x: auto;
+    /* flex-wrap: wrap; */
+  }
+  
+
+  .card_content {
+    background-color: #e74c3c;
+    min-width: 200px;
+    margin: 5px;
+  }
+ 
+  .card::-webkit-scrollbar {
+    display: none;
+    /* overflow: -moz-scrollbars-none; */
+  }
+  .glider-track {
+    scrollbar-width: none;
+  }
+  @-moz-document url-prefix() {
+    .glider-track {
+      margin-bottom: 17px;
+    }
+    .glider-wrap {
+      overflow: hidden;
+    }
+  }
