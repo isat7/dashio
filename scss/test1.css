@@ -4,20 +4,28 @@ html, body {
     margin: 0;
   }
   .isat-wrapper {
+
     height: 100%;
     display: flex;
     flex-direction: column;
   }
 .isat-header{
-    /* overflow: hidden; */
-    /* max-height: 55px; */
+   
+background:#eeeeee;
     padding:10px 5;
     flex-wrap: wrap;
+    margin-left:260px;
+}
+.isat-footer{
+   
+background:#eeeeee;
+     margin-left:260px;
 }
 .isat-content {
     flex: 1;
     overflow: auto;
-    background: pink;
+  
+    margin-left: 260px;
   }
   .fill_height{
       height:100%;
@@ -61,7 +69,8 @@ flex:1;
 
     position:fixed;
     height:100%;
-    background: green;
+    background-color: #f1f1f1;
+    width:260px;
 }
 
 .isat_layout{
@@ -465,13 +474,7 @@ width:75%;
   flex-wrap: wrap;
 }
 
-.side_nav{
 
-    position: fixed;
-    z-index: 100;
-    top:0px;
-    width:70%;
-}
 .main{
     width:100%;
     margin-left:0px;
@@ -485,19 +488,12 @@ width:75%;
 }
 
 }
-@media only screen and (min-width: 481px) {
-    .side_nav{
-    width:60%;
-} 
-
+@media only screen and (min-width: 480px) {
+    
 
  } 
 
- @media only screen and (min-width: 781px) {
-    .side_nav{
-    width:20%;
-} 
- }
+
 .bottom_nav_gesture{
     position: fixed;
     /* visibility: hidden; */
