@@ -506,7 +506,7 @@ width:75%;
 
 
 
-@media only screen and (max-width: 801px) {
+@media only screen and (min-width: 801px) {
     /* For mobile phones: */
     
     
