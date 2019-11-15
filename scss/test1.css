@@ -503,7 +503,37 @@ width:75%;
 }
 
 }
-@media only screen and (min-width: 481px) {
+
+
+
+@media only screen and (max-width: 801px) {
+    /* For mobile phones: */
+    
+    
+    .isat-header{
+       
+        background:#eeeeee;
+            padding:10px 5;
+            flex-wrap: wrap;
+            margin-left:0;
+        }
+        .isat-footer{
+           
+        background:#eeeeee;
+             margin-left:0;
+        }
+        .isat-content {
+            flex: 1;
+            overflow: auto;
+          
+            margin-left: 0;
+          }
+    
+    
+    }
+
+
+@media only screen and (min-width: 1025px) {
 
     .isat-header{
    

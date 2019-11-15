@@ -213,6 +213,12 @@
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
 <script>
+
+
+displayWindowSize();
+window.addEventListener("resize", displayWindowSize);
+function displayWindowSize(){
+
 var side_nav=document.querySelector(".isat-left_nav");
 var isat_content=document.querySelector(".isat-content");
 var mc = new Hammer(isat_content);
@@ -257,6 +263,16 @@ if (window.matchMedia("(max-width: 480px)").matches) {
         
         });
 
+}
+else{
+
+
+
+
+
+    side_nav.classList.remove("hide");
+
+
 }     
        
 
@@ -271,7 +287,7 @@ new Glider(document.querySelector('.glider'), {
 });          
 
 
-
+}
 
 // adjust size of nav bar
 // displayWindowSize();
