@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
+    <link rel="stylesheet" href="scss/test1.css">
     <style>
     
     html, body {
@@ -42,34 +43,40 @@
 </head>
 <body>
     
-        <div class="wrapper">
-                <div class="header" style="overflow: hidden;">
-                      
-                        HeaderHeaderHeaderHeaderHeaderHeadeaderHeaderHeaderHeaderHeaderHeaderHeaderHeader                        HeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeaderHeader
-                        HeaderHeaderHeaderHeaderHeaderHear</div>
-                <div class="side_nav" style="width:20%;position:fixed;height:100%;background: green;">side nav</div>
+        <div class="isat-wrapper">
+                <div class="isat-header" style="display: flex;flex-wrap: wrap;">
+                
+                <div  class="logo align-self"><img src="isat.png" style="width:45px;height:30px" ></div>
+                
+                <ul class="isat_menu isat-flex" style="justify-content: flex-end;">
+                    <li class="menu_item"><a href="#">Home</a></li>
+                    <li class="menu_item"><a href="#">Category</a></li>
+                    <li class="menu_item"><a href="#">Delivery</a></li>
+                    <li class="menu_item"><a href="#">Help Lines</a></li>
+                </ul>   
+                
+                </div>
+            <div class="isat-left_nav" style="width:100px">side nav</div>
                <!-- <div class="row  "> -->
                   
-                <div class="content " style="background: red;">
+                <div class="isat-content " style="background: red;">
                   <div style="height:1000px;">Content</div>
                 <!-- </div> -->
                 </div>
-                <div class="footer">Footer</div>
+                <div class="isat-footer">Footer</div>
               </div>
 </body>
 
 <script>
-
-
-
 // adjust size of nav bar
+displayWindowSize();
 // document.addEventListener("DOMContentLoaded", ready);
 window.addEventListener("resize", displayWindowSize);
 function displayWindowSize(){
-var header=document.querySelector(".header");
-var footer=document.querySelector(".footer");
-var side_nav=document.querySelector(".side_nav");
-var content=document.querySelector(".content");
+var header=document.querySelector(".isat-header");
+var footer=document.querySelector(".isat-footer");
+var side_nav=document.querySelector(".isat-left_nav");
+var content=document.querySelector(".isat-content");
 var side_nav_width=side_nav.offsetWidth;
 var total_adjust=header.offsetHeight+footer.offsetHeight;
     console.log("resize triggered");
@@ -77,19 +84,9 @@ var total_adjust=header.offsetHeight+footer.offsetHeight;
     side_nav.style.height="calc(100% - "+total_adjust+"px)";
     content.style.marginLeft=side_nav_width+"px";
     content.style.width="calc(100% - "+side_nav_width+"px)";
-
-
     console.log("header"+header.offsetHeight);
 console.log("footer"+footer.offsetHeight);
-
 }
-
-
 // side_nav.style.botto
-
-
-
-
-
 </script>
 </html>
