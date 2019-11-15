@@ -475,10 +475,24 @@ width:75%;
 }
 
 
-.main{
-    width:100%;
-    margin-left:0px;
-}
+.isat-header{
+   
+    background:#eeeeee;
+        padding:10px 5;
+        flex-wrap: wrap;
+        margin-left:0;
+    }
+    .isat-footer{
+       
+    background:#eeeeee;
+         margin-left:0;
+    }
+    .isat-content {
+        flex: 1;
+        overflow: auto;
+      
+        margin-left: 0;
+      }
 
 .aspect_ratio{
     max-width: 230px;

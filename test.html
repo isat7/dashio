@@ -168,6 +168,34 @@
 <script src="https://hammerjs.github.io/dist/hammer.js"></script>
 
 <script>
+var side_nav=document.querySelector(".isat-left_nav");
+var isat_content=document.querySelector(".isat-content");
+var mc = new Hammer(isat_content);
+
+if (window.matchMedia("(max-width: 480px)").matches) {
+          /* The viewport is less than, or equal to, 700 pixels wide */
+          side_nav.classList.add("hide");
+          mc.on("swiperight", function(ev) {
+        
+        side_nav.classList.remove("hide");
+        
+        side_nav.style.top="0px";
+        
+        
+          
+        });
+        
+        mc.on("swipeleft", function(ev) {
+        
+            side_nav.classList.add("hide");
+        
+        });
+
+}     
+       
+
+
+
 
 // adjust size of nav bar
 // displayWindowSize();
