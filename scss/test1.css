@@ -71,6 +71,7 @@ flex:1;
     height:100%;
     background-color: #f1f1f1;
     width:260px;
+    z-index: 1000;
 }
 
 .isat_layout{
