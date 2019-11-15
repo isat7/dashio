@@ -509,18 +509,18 @@ width:75%;
         background:#eeeeee;
             padding:10px 5;
             flex-wrap: wrap;
-            margin-left:0;
+            margin-left:260px;
         }
         .isat-footer{
            
         background:#eeeeee;
-             margin-left:0;
+             margin-left:260px;
         }
         .isat-content {
             flex: 1;
             overflow: auto;
           
-            margin-left: 0;
+            margin-left: 260px;
           }
     
         
@@ -812,7 +812,7 @@ border-bottom:1px solid black ;
 
 /* Slideshow container-------------------------------------------------------------------------------------- */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 2000px;
   position: relative;
   margin: auto;
 }
