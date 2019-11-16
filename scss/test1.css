@@ -491,6 +491,20 @@ width:75%;
     justify-content: flex-end;
 }
 
+.isat-flex-x-start{
+    justify-content: flex-start;
+}
+.isat-flex-x-end{
+    justify-content: flex-end;
+}
+
+.isat-flex-y-start{
+    align-content: flex-start;
+}
+.isat-flex-y-end{
+    align-content: flex-end;
+}
+
 .isat-center{
     justify-content: center;
 }
