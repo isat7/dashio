@@ -30,8 +30,19 @@ background:#eeeeee;
   .fill_height{
       height:100%;
   }
- 
-/* 
+
+  
+  .isat-column{
+
+    flex-direction: column;
+  }
+
+.isat-row{
+    flex-direction: row;
+}
+
+
+  /* 
 .header{
  position: fixed;
  top:0px;
@@ -445,6 +456,57 @@ width:75%;
     justify-content: space-between;
 }
 
+.isat-flex-start{
+    justify-content: flex-start;
+}
+.isat-flex-end{
+    justify-content: flex-end;
+}
+
+.isat-center{
+    justify-content: center;
+}
+.isat-xy-center{
+    justify-content: center;
+    align-items: center;
+
+}
+.isat-space-around{
+    justify-content: space-around;
+}
+
+.isat-space-between{
+    justify-content: space-between;
+}
+
+/* font */
+.isat-header-font{
+
+    font-size:24px;
+}
+.isat-text-align-center{
+text-align: center;padding:20px
+}
+
+
+
+.img_circle{
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50px;
+    /* -webkit-background-clip: padding-box; */
+    -moz-border-radius: 50%;
+    /* -moz-background-clip: padding; */
+    border-radius: 50px;
+    /* background-clip: padding-box;
+    margin: 7px 0 0 5px;
+    float: left;
+    background-size: cover;
+    background-position: center center; */
+}
+
+
+
 .circle{
     width: 50px;
     height: 50px;
@@ -456,6 +518,14 @@ width:75%;
     background-clip: padding-box;
     margin: 7px 0 0 5px;
     float: left;
+    background-size: cover;
+    background-position: center center;
+}
+
+.isat-fix_image{
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
     background-size: cover;
     background-position: center center;
 }
