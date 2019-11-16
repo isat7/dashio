@@ -158,6 +158,9 @@ align-items:space-around;
 .align-self{
     align-self: flex-start;
     }
+.isat-align-self{
+align-self: flex-start;
+}
 .flex-ib{
 align-items:space-between;
 }
@@ -165,6 +168,31 @@ align-items:space-between;
 
 
 /* menu */
+
+/* simple menu */
+
+.isat-simple-menu{
+    display: flex;
+    background:#eeeeee;
+    width: 100%;
+    margin-left: 0;
+    flex-wrap: wrap;
+    padding:10px 5px;
+   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+.isat-menu-icon{
+    display:block;
+    padding:10px 15px;
+
+}
+.isat-menu-text{
+    display:block;
+    padding:10px;
+    font-size:20px
+}
+
 .isat_menu{
     margin: 0;
     padding: 0;
@@ -549,9 +577,7 @@ text-align: center;padding:20px
 }
 
 
-.isat-header{
-   
-    background:#eeeeee;
+.isat-header{    background:#eeeeee;
         padding:10px 5;
         flex-wrap: wrap;
         margin-left:0;
