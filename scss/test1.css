@@ -15,7 +15,7 @@ background:#eeeeee;
     padding:10px 5;
     flex-wrap: wrap;
     margin-left:260px;
-    overflow-x: hidden;
+    overflow: hidden;
 
 }
 .isat-footer{
@@ -181,7 +181,7 @@ align-items:space-between;
     flex-wrap: wrap;
     padding:10px 5px;
    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
 
 }
 .isat-menu-icon{
@@ -216,7 +216,7 @@ align-items:space-between;
     text-decoration: none;
     display: flex;
     align-items: flex-start;
-    color: #333;
+    /* color: #333; */
 }
 .menu_item a:hover{
     background:black;
@@ -507,8 +507,20 @@ width:75%;
     align-content: flex-end;
 }
 
+.isat-flex-y-center{
+    align-content: center;
+}
+
 .isat-center{
     justify-content: center;
+}
+.isat-flex-x-center{
+    justify-content: center;
+}
+.isat-flex-xy-center{
+    justify-content: center;
+    align-items: center;
+
 }
 .isat-xy-center{
     justify-content: center;
@@ -522,6 +534,28 @@ width:75%;
 .isat-space-between{
     justify-content: space-between;
 }
+
+
+.isat-space-x-around{
+    justify-content: space-around;
+}
+
+.isat-space-x-between{
+    justify-content: space-between;
+}
+
+
+.isat-space-y-around{
+    align-items: space-around;
+}
+
+.isat-space-y-between{
+    align-items: space-between;
+}
+
+
+
+
 
 /* font */
 .isat-bold{
@@ -601,7 +635,7 @@ text-align: center;padding:20px
         padding:10px 5;
         flex-wrap: wrap;
         margin-left:0;
-        overflow-x: hidden;
+        overflow: hidden;
     }
     .isat-footer{
        
@@ -637,6 +671,7 @@ text-align: center;padding:20px
             padding:10px 5;
             flex-wrap: wrap;
             margin-left:0;
+            overflow: hidden;
         }
         .isat-footer{
            
@@ -662,6 +697,7 @@ text-align: center;padding:20px
             padding:10px 5;
             flex-wrap: wrap;
             margin-left:260px;
+            overflow: hidden;
         }
         .isat-footer{
            
