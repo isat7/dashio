@@ -68,7 +68,7 @@
             
             
                 </div>   
-                <div class="isat-row isat-flex" style="margin-left: 20px;">
+                <div class="isat-category isat-row isat-flex" style="margin-left: 20px;">
                    
                             <div class="isat-flex isat-space-x-around">
 
@@ -305,12 +305,14 @@ function displayWindowSize(){
 
 var side_nav=document.querySelector(".isat-left_nav");
 var isat_content=document.querySelector(".isat-content");
+var isat_header=document.querySelector(".isat-header");
 var mc = new Hammer(isat_content);
 var top_menu=document.querySelector(".top_menu");
+var isat_category=document.querySelector(".isat-category");
 var scroll_watcher = scroll.scrollTop;
 
-// console.log("scroll"+a);
-if(scroll_watcher>48){
+console.log("scroll"+scroll_watcher);
+if(scroll_watcher>190){
 
 top_menu.style.display="none"
 // alert("more than 48");
@@ -321,6 +323,18 @@ else{
 top_menu.style.display="block"
 }
 
+if(scroll_watcher>195){
+
+isat_category.style.display="none";
+isat_header.style.height="60px";
+// alert("more than 48");
+}
+else{
+    // alert("less than 48");
+    
+isat_category.style.display="block"
+isat_header.style.height="220px";
+}
 
 // var slideIndex = 0;
 // showSlides();
