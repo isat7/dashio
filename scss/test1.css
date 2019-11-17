@@ -189,7 +189,7 @@ align-items:space-between;
 .isat-simple-menu{
     display: flex;
     background:#eeeeee;
-    width: 100%;
+    width: 99%;
     margin-left: 0;
     flex-wrap: wrap;
     padding:10px 5px;
