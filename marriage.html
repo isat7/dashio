@@ -27,7 +27,7 @@
       <!-- header-->
       <div class="isat-header shadow app_color" style="height: 220px;position: relative;overflow: visible; " >
 
-            <div class=" shadow isat-fix_image "  style="width:90%;z-index:100;border-radius:15px;padding:15px;box-sizing: border-box; position:absolute;left:0;right:0; margin:0 auto;bottom:-138px;height:200px;background-image:url(images/marriage/m1.jpg)"> 
+            <div class="top_menu shadow isat-fix_image "  style="width:90%;z-index:100;border-radius:15px;padding:15px;box-sizing: border-box; position:absolute;left:0;right:0; margin:0 auto;bottom:-138px;height:200px;background-image:url(images/marriage/m1.jpg)"> 
               
 
 <div class="isat-flex isat-column" >
@@ -291,12 +291,37 @@
 
 
 displayWindowSize();
+
+var scroll=document.querySelector(".isat-content");
+scroll.onscroll=function(e){
+
+    displayWindowSize();
+ 
+}
+
+
 window.addEventListener("resize", displayWindowSize);
 function displayWindowSize(){
 
 var side_nav=document.querySelector(".isat-left_nav");
 var isat_content=document.querySelector(".isat-content");
 var mc = new Hammer(isat_content);
+var top_menu=document.querySelector(".top_menu");
+var scroll_watcher = scroll.scrollTop;
+
+// console.log("scroll"+a);
+if(scroll_watcher>48){
+
+top_menu.style.display="none"
+// alert("more than 48");
+}
+else{
+    // alert("less than 48");
+    
+top_menu.style.display="block"
+}
+
+
 // var slideIndex = 0;
 // showSlides();
 
