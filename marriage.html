@@ -315,18 +315,27 @@ console.log("scroll"+scroll_watcher);
 if(scroll_watcher>190){
 
 top_menu.style.display="none"
+
+top_menu.style.transition = "all 1s";
+top_menu.style.WebkitTransition = "all 1s";
 // alert("more than 48");
 }
 else{
     // alert("less than 48");
     
 top_menu.style.display="block"
+
+top_menu.style.transition = "all 1s";
+top_menu.style.WebkitTransition = "all 1s";
 }
 
 if(scroll_watcher>195){
 
 isat_category.style.display="none";
-isat_header.style.height="60px";
+isat_header.style.height="70px";
+
+isat_header.style.transition = "all 0.5s";
+isat_header.style.WebkitTransition = "all 0.5s";
 // alert("more than 48");
 }
 else{
@@ -334,6 +343,9 @@ else{
     
 isat_category.style.display="block"
 isat_header.style.height="220px";
+isat_header.style.height="220px";
+isat_header.style.transition = "all 2s";
+isat_header.style.WebkitTransition = "all 2s";
 }
 
 // var slideIndex = 0;
