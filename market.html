@@ -12,16 +12,62 @@
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <style>
   .app_color{
-    background: #fb7220;
+    background: #208afb;
   }  
-  
+  *{
+      color:black
+  }
+
+  .active{
+      background:white
+  }
+
+  .material_list:hover{
+    background: #f5f1f1;
+}
     </style>
 </head>
 <body>
     
         <div class="isat-wrapper">
       <!-- header-->
-            <div class="isat-header shadow app_color" style="height: 180px;">
+            <div class="isat-header shadow app_color" style="height: 220px;position: relative;overflow: visible; " >
+
+                <div class="col-11 shadow"  style="border-radius:15px;padding:15px;box-sizing: border-box; position:absolute;left:0;right:0; margin:0 auto;bottom:-138px;height:200px;background:white"> 
+                  
+
+ <div class="isat-flex isat-column" style="background:white" >
+
+<div class="isat-flex isat-space-around ">
+    <div class="isat-flex isat-row">
+     <div style="margin-right:10px">   <i class='fas fa-mobile-alt ' style='font-size:50px;color:orange'></i></div>
+     <div class="isat-flex isat-column " style="padding:5px 0px;color:white" >
+         <div>Pulse & Data</div>
+         <div>Bonus pulsa 50%</div>
+     </div>
+    </div>
+    <div></div>
+    <div></div>
+    <div>
+            <button class="material_btn btn_s primary">Buy Now </button></div>
+</div>
+<div  class="isat-flex isat-space-x-around isat-flex-y-end">
+
+    <div> <i class='fas fa-lightbulb' style='font-size:50px;color:orange'></i> </div>
+    <div><i class='fas fa-bullhorn ' style='font-size:50px;color:green'></i></div>
+    <div><i class='fas fa-crosshairs' style='font-size:50px;color:blue'></i></div>
+    <div><i class='fas fa-microscope' style='font-size:50px;color:orchid'></i></div>
+</div>
+
+ </div>
+
+
+
+    
+
+
+
+                                               </div>
                 
                 <div class="isat-simple-menu app_color " >
 
@@ -36,22 +82,24 @@
                 
                     </div>   
                     <div class="isat-row isat-flex" style="margin-left: 20px;">
-                            <div>
-                                   <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);width:60px;height:60px"></div>
-                  
-   
+                       
+                                <div class="isat-flex isat-space-x-around">
+
+                                   
+                                        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-home' style='font-size:24px;line-height: 37px;'></i></div>
+                                        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-star' style='font-size:24px;line-height: 37px;'></i></div>
+                                        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-phone-alt' style='font-size:24px;line-height: 37px;'></i></div>
+                                        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-envelope' style='font-size:24px;line-height: 37px;'></i></div>
+                                           
                             </div>
-                            <div class="isat-column isat-flex isat-flex-x-center" style="padding:10px">
-                                <div class="white isat-bold " style="font-size:20px">Balaji i</div>
-                                <div class="white">5-interior design</div>
-                               </div>
+                            
+                            
+   
+                          
+                           
                            </div>
-                           <ul class="isat_menu isat-flex isat-flex-x-start white" style="margin-left: 20px;color:white">
-                                <li class="menu_item"><a  href="#" class="white" >About</a></li>
-                                <li class="menu_item"><a href="#" class="white">Followers</a></li>
-                                <li class="menu_item"><a href="#" class="white">Following</a></li>
-                                
-                            </ul>   
+                             
+                         
                 
              </div>
             
@@ -59,17 +107,14 @@
                 <div class="isat-left_nav shadow app_color">
 
                 
+            <div class="isat-flex  isat-bold" style="padding:10px 16px">
+         <div> <img src="isat.png" style="padding:10px 16px;width:35px;height:35px"  alt=""></div>
+         <div style="padding:10px 16px;font-size:33px">iSat</div> 
+         
+            </div>
+            <hr>
                  <ul class="material_menu_container">
-                <li class="material_menu_header" style="background-size: cover;
-                background-position: center center;background-image:url(images/food/i15.jpg);">
-                <div style="display:flex;width: 100%;">
-                <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);"></div>
-                </div>
-                <div class="divider"></div>
-                <div style="color:white">isatsoftwaresolutions@gmail.com</div>
-                <div class="divider"></div>
-                <div style="color:white">Balaji</div>
-                </li>
+               
                 <li class="material_list active white"><div style="display:flex;flex:1;"><img src="vector/f3.svg" width="30" height="25"></div><div style="display:flex;flex:4;">Indian Food</div></li>
                 <li class="material_list white"><div style="display:flex;flex:1;"><img src="vector/f2.svg" width="30" height="25"></div><div style="display:flex;flex:4;">Chinese</div></li>
                 <li class="material_list white"><div style="display:flex;flex:1;"><img src="vector/f6.svg" width="30" height="25"></div><div style="display:flex;flex:4;">French</div></li>
@@ -84,99 +129,71 @@
             </div>
                <!-- <div class="row  "> -->
                   
-                <div class="isat-content ">
+                <div class="isat-content " style="overflow-y: hidden;">
                   <div style="height:1000px;padding:10px">
 <!---------------------------------------------------------- container---------------------------------------------------------- -->
 
-<div class="isat-flex isat-column">
-    <div class="isat-bold" style="padding:10px 0">Information</div>
-    <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet officiis corrupti doloremque similique repudiandae. Qui, explicabo expedita eius nam, voluptatibus ipsum voluptate sed recusandae rerum cumque excepturi. Harum, enim sint?</div>
-</div>
 
 
-<div class="isat-flex isat-space-x-around">
+<div style="margin-top: 140px;">
 
-        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-home' style='font-size:24px;line-height: 37px;'></i></div>
-        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-star' style='font-size:24px;line-height: 37px;'></i></div>
-        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-phone-alt' style='font-size:24px;line-height: 37px;'></i></div>
-        <div class="circle isat-card-center" style="width: 70px;height:70px;"><i class='fas fa-envelope' style='font-size:24px;line-height: 37px;'></i></div>
-        <!-- <div class="circle isat-card"></div>
-        <div class="circle isat-card"></div>
-        <div class="circle isat-card"></div> -->
+    <div class="isat-flex">
+            <button class="material_btn btn_s primary isat-flex isat-flex-xy-center " style="height: 60px;font-size:18px">
+            <img src="isat.png" style="width:25px;height:25px;margin-right:4px"/>    
+                Buy Now 
+            </button></div>
 
-        <!-- <div class="circle isat-card" style="border:1px solid white; "></div>
-        <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);"></div>
-        <div class="circle" style="border:1px solid white; background-image: url(images/balaji.jpg);"></div> -->
-               
-</div>
-
-
-
-<!-- center text and button -->
-                    <div class="isat-flex isat-xy-center isat-column" style="margin-top:30px">
-                   <div class="isat-header-font isat-bold">Balaji Ui/Ux designer</div>
-                    <div class="isat-text-align-center">Trust me I am Engineer</div>
-                    <div class="isat-row isat-flex isat-xy-center isat-space-around"><div><i class='fas fa-envelope' style='font-size:24px;color:green'></i></div>     <div class="circle" style="margin:0px 40px;border:1px solid white; background-image: url(images/balaji.jpg);height:100px;width:100px"></div><div><i class='fas fa-phone-alt' style='font-size:24px;color:green'></i></div>  </div>
-                    </div>
-
-<!-- 3 grid -->
-
-<hr>
-    <div class="isat-flex  isat-space-around">
-                <div class="isat-column isat-text-align-center">
-                <div class="isat-header-font isat-bold">9295</div>
-                <div>Follerwers</div>
-                </div>
-                <div class="isat-column isat-text-align-center"> 
-                <div class="isat-header-font isat-bold">1290</div>
-                <div>Following</div>
-                </div>
-                <div class="isat-column isat-text-align-center">
-                <div class="isat-header-font isat-bold">7.8</div>
-                <div>Social Score</div>
-                </div>
-     </div>          
-<hr>    
-     
-<div class="isat-flex isat-text-align-center " style="padding:30px 16px;">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto voluptas eius repellendus pariatur distinctio inventore quae iste atque ipsum perspiciatis recusandae, cupiditate perferendis cumque fugiat, ratione, quis dolore explicabo!
-</div>
-<hr>
-
-<div class="isat-wrap isat-center" style="display:flex;">
-      
-            <div  style="display:block; margin-bottom:40px;width:40%">
-            <div class="isat-header-font isat-font-18 isat-bold ">Website</div>
-            <div >abc.com</div>
-            </div>
-
-            <div  style="width:40%" > 
-            <div class="isat-header-font isat-font-18 isat-bold">email</div>
-            <div>abc@abc.com</div>
-            </div>
-
-            <div style="width:40%">
-                <div class="isat-header-font isat-font-18 isat-bold ">Phone</div>
-                <div class="">(+91)9514242225</div>
-                </div>
-                <div  style="width:40%"> 
-                <div class="isat-header-font isat-font-18 isat-bold">Location</div>
-                <div>India</div>
-                </div>
-
-</div>
-    
- <!-- <div class="isat-flex isat-space-around ">
-    <div class="isat-column  ">
-    <div class="isat-header-font isat-bold ">Phone</div>
-    <div class="">(+91)9514242225</div>
-    </div>
-    <div class="isat-column "> 
-    <div class="isat-header-font isat-bold">Location</div>
-    <div>India</div>
     </div>
 
-</div>       -->
+    <div class="isat-flex isat-flex-x-center"><i class='fas fa-ellipsis-h' style='font-size:24px;color:black'></i></div>
+
+
+
+
+
+
+
+
+    <div class="isat-flex isat-column shadow" style="position:relative;color:black;">
+            <div class="isat-flex isat-space-between" style="padding:10px 16px">
+                <div>HISTORY</div>
+            <div><i class='fas fa-drafting-compass' style='font-size:24px;color:black'></i></div>
+        </div>
+           <div><hr></div>
+
+           
+           <div class="isat-flex isat-space-between" style="padding:10px 16px">
+                <div class="isat-bold">Google
+                
+            </div>
+            <div><i class='fas fa-drafting-compass' style='font-size:24px;color:black'></i></div>
+        </div>  <div class="isat-flex isat-space-between" style="padding:10px 16px">
+                <div class="isat-bold" >Yahoo</div>
+            <div><i class='fas fa-drafting-compass' style='font-size:24px;color:black'></i></div>
+        </div>  <div class="isat-flex isat-space-between" style="padding:10px 16px">
+                <div class="isat-bold">Alibaba</div>
+            <div><i class='fas fa-drafting-compass' style='font-size:24px;color:black'></i></div>
+        </div>  <div class="isat-flex isat-space-between" style="padding:10px 16px">
+                <div class="isat-bold">AWS</div>
+            <div><i class='fas fa-drafting-compass' style='font-size:24px;color:black'></i></div>
+        </div>  <div class="isat-flex isat-space-between" style="padding:10px 16px">
+                <div class="isat-bold">Azure</div>
+            <div><i class='fas fa-drafting-compass' style='font-size:24px;color:black'></i></div>
+        </div>
+            </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
 
 
 

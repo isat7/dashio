@@ -139,11 +139,24 @@ flex:1;
 .isat-card{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  text-align: center;
+ 
   background-color: #f1f1f1;
   box-sizing: border-box;
   
 }
+
+.isat-card-center{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+
+}
+
+
+
+
 .flex-ja{
 justify-content:space-around;
 }
@@ -501,14 +514,14 @@ width:75%;
 }
 
 .isat-flex-y-start{
-    align-content: flex-start;
+    align-items: flex-start;
 }
 .isat-flex-y-end{
-    align-content: flex-end;
+    align-items: flex-end;
 }
 
 .isat-flex-y-center{
-    align-content: center;
+    align-items: center;
 }
 
 .isat-center{
@@ -526,6 +539,15 @@ width:75%;
     justify-content: center;
     align-items: center;
 
+}
+.isat-element-center{
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
 }
 .isat-space-around{
     justify-content: space-around;
@@ -850,7 +872,7 @@ min-width: 100px;
 
 .material_btn{
 position: relative;
-margin: 30px auto;
+
 padding: 10px;    
 overflow: hidden;              
 border-width: 0;
