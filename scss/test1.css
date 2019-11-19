@@ -288,7 +288,7 @@ align-items:space-between;
 }
 
 .isat-hr{
-    height:1px;border:none;color:#333;background-color:#333;"
+    height:1px;border:none;color:#333;background-color:#333;
 }
 
 
@@ -726,7 +726,7 @@ text-align: center;padding:20px
 
   .grid-d3-m2{
     display: flex;
-    width:33.33%;
+    width:50%;
     box-sizing: border-box;
 }
 
