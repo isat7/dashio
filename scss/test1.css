@@ -272,7 +272,8 @@ align-items:space-between;
     height: 170px;
 }
 .material_list{
-    display: flex;padding:10px 16px;color:white";
+    display: flex;padding:10px 16px;
+    color:white;
 }
 .active{
     background:#7c7777;
