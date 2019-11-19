@@ -411,6 +411,13 @@ background:orangered
     box-sizing: border-box;
 }
 
+.grid-d3-m2{
+    display: flex;
+    width:33.33%;
+    box-sizing: border-box;
+}
+
+
 .grid-2{
     display: flex;
     width:50%;
@@ -709,6 +716,13 @@ text-align: center;padding:20px
 
   }
 
+  .grid-d3-m2{
+    display: flex;
+    width:33.33%;
+    box-sizing: border-box;
+}
+
+
   .grid-d4-m2{
     display: flex;
     width:50%;
@@ -758,6 +772,12 @@ text-align: center;padding:20px
         width:50%;
         box-sizing: border-box;
     }   
+    .grid-d3-m2{
+        display: flex;
+        width:50%;
+        box-sizing: border-box;
+    }
+    
     .isat-header{
        
         background:#eeeeee;
@@ -789,7 +809,12 @@ text-align: center;padding:20px
         width:25%;
         box-sizing: border-box;
     }
-
+    .grid-d3-m2{
+        display: flex;
+        width:33.33%;
+        box-sizing: border-box;
+    }
+    
 
     .isat-header{
    
