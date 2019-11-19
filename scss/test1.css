@@ -658,6 +658,13 @@ text-align: center;padding:20px
     -webkit-background-clip: padding-box;
     background-size: cover;
     background-position: center center;
+/* isat updated */
+    background-repeat: no-repeat;
+
+}
+
+.isat-min-height{
+    min-height: 170px;
 }
 
 .isat-fix-image{
