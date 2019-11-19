@@ -663,6 +663,7 @@ text-align: center;padding:20px
 .isat-fix-image{
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
 }
 /* isat image container */
 .isat-image-container {
