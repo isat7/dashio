@@ -399,7 +399,11 @@ background:orangered
 }
 /* grid */
 
-
+.grid-d4-m2{
+    display: flex;
+    width:25%;
+    box-sizing: border-box;
+}
 
 .grid-2{
     display: flex;
@@ -698,6 +702,12 @@ text-align: center;padding:20px
     width: 100%;
 
   }
+
+  .grid-d4-m2{
+    display: flex;
+    width:50%;
+    box-sizing: border-box;
+}
   .row-m{
     display:flex;
   flex-wrap: wrap;
@@ -734,10 +744,14 @@ text-align: center;padding:20px
 
 
 
-@media only screen and (min-width: 801px) {
-    /* For mobile phones: */
+@media only screen and (min-width: 481px) {
+    /* For tablet: */
     
-    
+    .grid-d4-m2{
+        display: flex;
+        width:50%;
+        box-sizing: border-box;
+    }   
     .isat-header{
        
         background:#eeeeee;
@@ -763,6 +777,13 @@ text-align: center;padding:20px
 
 
 @media only screen and (min-width: 1025px) {
+
+    .grid-d4-m2{
+        display: flex;
+        width:25%;
+        box-sizing: border-box;
+    }
+
 
     .isat-header{
    
