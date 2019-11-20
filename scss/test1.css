@@ -297,6 +297,8 @@ align-items:space-between;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
 }
 
 
