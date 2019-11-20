@@ -293,7 +293,7 @@ align-items:space-between;
 
 .isat-word-overflow{
     display: inline-block;
-    /* width: 180px; */
+    width: 50px;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
