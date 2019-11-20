@@ -291,6 +291,14 @@ align-items:space-between;
     height:1px;border:none;color:#333;background-color:#333;
 }
 
+.isat-word-overflow{
+    display: inline-block;
+    /* width: 180px; */
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
 
 /* timeline */
 .ul-ts{
