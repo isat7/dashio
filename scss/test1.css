@@ -292,9 +292,11 @@ align-items:space-between;
 }
 
 .isat-scroll {
+position: relative;
     overflow-x: scroll;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     white-space: nowrap;
+    height: 200px;
    
   }
   
@@ -311,16 +313,16 @@ align-items:space-between;
 }  
   .isat-sitem {
 
-    border: 2px solid red;
+    /* border: 2px solid red; */
     flex: 0 0 auto;
     margin-right: 3px;
     width: 150px;
     height: 75px;
-    background: black;
+    /* background: black; */
   }
   
   .isat-scroll, .isat-scroll-flex {
-    height: 80px;
+    /* height: 80px; */
     margin-bottom: 20px;
     width: 100%;
     -webkit-overflow-scrolling: touch;
