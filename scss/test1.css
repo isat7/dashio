@@ -308,7 +308,7 @@ position: relative;
  
   }
 
-.isat-scroll-flex ,.isat-sitem{
+.isat-scroll-flex ,.isat-scroll-item{
     display: inline-block;
 }  
   .isat-scroll-item {
