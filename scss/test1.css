@@ -291,6 +291,45 @@ align-items:space-between;
     height:1px;border:none;color:#333;background-color:#333;
 }
 
+.isat-scroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+   
+  }
+  
+  .isat-scroll-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+ 
+  }
+
+.isat-scroll-flex ,.isat-sitem{
+    display: inline-block;
+}  
+  .isat-sitem {
+
+    border: 2px solid red;
+    flex: 0 0 auto;
+    margin-right: 3px;
+    width: 150px;
+    height: 75px;
+    background: black;
+  }
+  
+  .isat-scroll, .isat-scroll-flex {
+    height: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+      }
+      .isat-scroll::-webkit-scrollbar {
+        display: none;
+      }
+  
+
 .isat-word-overflow{
     display: inline-block;
     width: 50px;
